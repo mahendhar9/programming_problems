@@ -28,3 +28,19 @@ describe "prime number generator" do
     expect(find_primes(2, 10)).to eq([2, 3, 5, 7])
   end
 end
+
+
+# Other implementations
+
+#---------------------------------------------
+# prime_array = []
+
+# (1...100).each do |num|
+#   if (1..Math.sqrt(num).floor).select { |d| num % d == 0 } == [1, num]
+#     prime_array.push(num)
+#   end
+# end
+#--------------------------------------------------
+
+#Read More
+# http://stackoverflow.com/questions/5811151/why-do-we-check-up-to-the-square-root-of-a-prime-number-to-determine-if-it-is-pr
